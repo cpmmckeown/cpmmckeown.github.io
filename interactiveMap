@@ -1,0 +1,148 @@
+<head>
+	
+	<title>Map Mockup</title>
+
+	<meta charset="utf-8" />
+	<meta name="map mockup" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin=""></script>
+
+
+	<style>
+	@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+		body {
+			margin: 0;
+			background-color: #DCDCDC;
+		}
+
+		#map {
+			margin: auto;
+			width: auto;
+			height: 800px;
+		}
+		
+.center {
+    margin: auto;
+    width: 50%;
+	padding: 0px;
+	box-shadow: 0px 10px 30px #888888; 
+}
+
+.plate {
+  width: 410px;
+  margin: 5% auto;
+}
+.shadow {
+  color: #222;
+  font-family: Inconsolata;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  text-align: left;
+  padding: 1em;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #222;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+
+.text1 {
+  font-size: 20px;
+}
+.text2 {
+  font-size: 169px;
+}
+.text3 {
+  font-size: 100px;
+}
+	</style>
+
+	
+</head>
+<body>
+
+<div id='map'></div>
+
+<script>
+
+	var map = L.map('map', {
+		crs: L.CRS.Simple,
+		minZoom: 0
+	});
+
+	var yx = L.latLng;
+
+	var xy = function(x, y) {
+		if (L.Util.isArray(x)) {    // When doing xy([x, y]);
+			return yx(x[1], x[0]);
+		}
+		return yx(y, x);  // When doing xy(x, y);
+	};
+
+	var bounds = [xy(-25, -26.5), xy(1023, 1021.5)];
+	var image = L.imageOverlay('https://gamestudiesisdead.files.wordpress.com/2017/10/nls-1.jpg', bounds).addTo(map);
+
+	var topLeft      = xy(70, 850);
+	var topRight    = xy( 940, 850);
+	var	example = xy (500, 500);
+	var bottomRight = xy( 940,  140);
+	var bottomLeft    = xy(70, 140);
+	
+	<!--
+	//this is for the potential video idea
+	var popup = L.popup({
+  keepInView: true,
+  autoPan: false,
+  closeButton: true,
+  closeOnClick: true,
+  maxWidth: 1000
+}).setContent('<iframe id="player1" src="https://player.vimeo.com/video/69426498?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;api=1&amp;player_id=player1" width="200" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+-->
+
+var popup = L.popup ({
+	keepInView: true,
+  autoPan: true,
+  closeButton: true,
+  closeOnClick: true,
+  maxWidth: 1000,
+  maxHeight: 500
+});
+
+	L.marker(topLeft).addTo(map).bindPopup('top left');
+	L.marker (example).addTo(map).bindPopup(popup.setContent
+	('	</div>	<audio autoplay>		<source src="http://k003.kiwi6.com/hotlink/krgmlv90k0/Quote_12.mp3" type="audio/mpeg">	</audio> <div class="center"><img src="https://gamestudiesisdead.files.wordpress.com/2017/10/arthurs-seat.png" height = "150" width = "200" style="width:100%"></div><div class="plate"><p class="script"><span>Arthurs Seat</span></p><p class="shadow text1">I decide to pursue my early idea of a walk, in the hope of settling the turmoil in my mind. It is for the best that Isobel is not with me, for her presence would have compelled me to restrict our ambulations to the lower walkways of Holyrood Park, close to the palace. Isobel is not feeble, but a gentlewoman’s attire does not lend itself to strenuous exercise. On my own I am free to climb up the steep paths of Arthur’s Seat, and I set off with the notion of reaching the summit. Very quickly I am beyond the popular loitering places close to the palace and taking a wilder route. It still surprises me that one moment I can be among the few Sunday strollers – there are not many of them, for the great majority of the better sort deem it sinful to take exercise on the Sabbath – and the next completely alone, save for the birds that chirp</p></div></body>'));
+	L.marker(topRight).addTo(map).bindPopup('top right');
+	L.marker(bottomRight).addTo(map).bindPopup('bottom right');
+	L.marker(bottomLeft).addTo(map).bindPopup('bottom left');
+
+	//var travel = L.polyline([bottomRight, bottomLeft]).addTo(map);
+	//if lines need to connect things?
+
+	map.setView(xy(500, 500), 0);
+
+</script>
+
+
+
+</body>
+</html>
