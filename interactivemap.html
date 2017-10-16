@@ -116,7 +116,7 @@
   	autoPan: false,
   	closeButton: true,
   	closeOnClick: true,
-  	minWidth: 700
+  	
 	}).setContent('<iframe id="player1" src="https://player.vimeo.com/video/69426498?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;api=1&amp;player_id=player1" width="200" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
 	-->
 
@@ -125,6 +125,7 @@ var popup = L.popup ({
 	  autoPan: true,
   	closeButton: true,
   	closeOnClick: true,
+	minWidth: 700
 	});
 
 	L.marker(topLeft).addTo(map).bindPopup('top left');
