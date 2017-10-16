@@ -1,7 +1,7 @@
 <html>
 <head>
 	
-	<title>Map Mockup</title>
+	<title>Map Mockup 1</title>
 
 	<meta charset="utf-8" />
 	<meta name="map mockup" content="width=device-width, initial-scale=1.0">
@@ -109,10 +109,15 @@
 		return yx(y, x);  // When doing xy(x, y);
 	};
 	var bounds = [xy(-25, -26.5), xy(1023, 1021.5)];
-	var image = L.imageOverlay('https://gamestudiesisdead.files.wordpress.com/2017/10/map-1.jpg', bounds).addTo(map);
+	var image = L.imageOverlay('https://gamestudiesisdead.files.wordpress.com/2017/10/nls-1.jpg', bounds).addTo(map);
 	var topLeft      = xy(70, 850);
 	var topRight    = xy( 940, 850);
-	var example = xy (500, 500);
+	var quoteOne = xy (450, 285);
+	var quoteEight = xy (450, 275);
+	var quoteNine = xy (430, 285);
+	var quoteFourteen = xy (450, 295);
+	var quoteTwentyFour = xy (463, 285);
+	
 	var bottomRight = xy( 940,  140);
 	var bottomLeft    = xy(70, 140);
 	
@@ -127,7 +132,7 @@
 	}).setContent('<iframe id="player1" src="https://player.vimeo.com/video/69426498?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;api=1&amp;player_id=player1" width="200" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
 	-->
 	
-var popup = L.popup ({
+var popup1 = L.popup ({
 	keepInView: true,
 	autoPan: true,
   	closeButton: false,
@@ -135,8 +140,55 @@ var popup = L.popup ({
 	minWidth:800,
 	maxWidth: 640,	
 	});
+var popup2 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup3 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup4 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup5 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup6 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+	
 	L.marker(topLeft).addTo(map).bindPopup('top left');
-	L.marker (example).addTo(map).bindPopup(popup.setContent('<div class="scroll-wrapper"> <iframe id="player1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	
+	L.marker (quoteOne).addTo(map).bindPopup(popup1.setContent('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEight).addTo(map).bindPopup(popup2.setContent (''));
+	L.marker (quoteNine).addTo(map).bindPopup(popup3.setContent (''));
+	L.marker (quoteFourteen).addTo(map).bindPopup(popup4.setContent (''));
+	L.marker (quoteTwentyFour).addTo(map).bindPopup(popup5.setContent (''));
+	
 	L.marker(topRight).addTo(map).bindPopup('top right');
 	L.marker(bottomRight).addTo(map).bindPopup('bottom right');
 	L.marker(bottomLeft).addTo(map).bindPopup('bottom left');
