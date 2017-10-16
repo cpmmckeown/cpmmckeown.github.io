@@ -125,9 +125,7 @@ var popup = L.popup ({
 	  autoPan: true,
   	closeButton: true,
   	closeOnClick: true,
-  	maxWidth: 2000,
-  	maxHeight: 1000
-	});
+  	});
 
 	L.marker(topLeft).addTo(map).bindPopup('top left');
 	L.marker (example).addTo(map).bindPopup(popup.setContent('<iframe id="player1" src="https://cpmmckeown.github.io/quote1.html" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe>'));
