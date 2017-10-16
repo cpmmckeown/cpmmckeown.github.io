@@ -15,12 +15,10 @@
 	<style>
 	@import url(https://fonts.googleapis.com/css?family=Inconsolata);
 @import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
-
 		body {
 			margin: 0;
 			background-color: #DCDCDC;
 			}
-
 		#map {
 			margin: auto;
 			width: auto;
@@ -33,7 +31,6 @@
 	padding: 0px;
 	box-shadow: 0px 10px 30px #888888; 
 }
-
 .plate {
   width: 410px;
   margin: 5% auto;
@@ -66,7 +63,6 @@
   width: 100%;
   border-bottom: 3px solid #fff;
 }
-
 .text1 {
   font-size: 20px;
 }
@@ -76,7 +72,6 @@
 .text3 {
   font-size: 100px;
 }
-
 .scroll-wrapper {position: relative; -webkit-overflow-scrolling: touch; overflow-y: scroll;} .scroll-wrapper, .scroll-wrapper  {
 			width: 100%;
 			height: 400px;
@@ -91,24 +86,19 @@
 <div id='map'></div>
 
 <script>
-
 	var map = L.map('map', {
 		crs: L.CRS.Simple,
 		minZoom: 0
 	});
-
 	var yx = L.latLng;
-
 	var xy = function(x, y) {
 		if (L.Util.isArray(x)) {    // When doing xy([x, y]);
 			return yx(x[1], x[0]);
 		}
 		return yx(y, x);  // When doing xy(x, y);
 	};
-
 	var bounds = [xy(-25, -26.5), xy(1023, 1021.5)];
 	var image = L.imageOverlay('https://gamestudiesisdead.files.wordpress.com/2017/10/nls-1.jpg', bounds).addTo(map);
-
 	var topLeft      = xy(70, 850);
 	var topRight    = xy( 940, 850);
 	var example = xy (500, 500);
@@ -125,27 +115,22 @@
   	
 	}).setContent('<iframe id="player1" src="https://player.vimeo.com/video/69426498?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=0&amp;api=1&amp;player_id=player1" width="200" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
 	-->
-
 var popup = L.popup ({
 	keepInView: true,
 	autoPan: true,
   	closeButton: false,
   	closeOnClick: true,
-	width: auto,
-	height: auto
+	minWidth:800,
+	maxWidth: 640,	
 	});
-
 	L.marker(topLeft).addTo(map).bindPopup('top left');
 	L.marker (example).addTo(map).bindPopup(popup.setContent('<div class="scroll-wrapper"> <iframe id="player1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
 	L.marker(topRight).addTo(map).bindPopup('top right');
 	L.marker(bottomRight).addTo(map).bindPopup('bottom right');
 	L.marker(bottomLeft).addTo(map).bindPopup('bottom left');
-
 	//var travel = L.polyline([bottomRight, bottomLeft]).addTo(map);
 	//if lines need to connect things?
-
 	map.setView(xy(500, 500), 0);
-
 </script>
 
 
