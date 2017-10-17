@@ -147,7 +147,7 @@
 	var quoteTwentySix = xy (465, 265);
 	var quoteTwentySeven = xy (250, 390);
 	var quoteTwentyEight = xy (550, 550);
-	
+	var quoteTwentyNine = xy (540, 530);
 	
 	<!--
 	//this is for the potential video idea
@@ -384,37 +384,46 @@ var popup28 = L.popup ({
 	minWidth:800,
 	maxWidth: 640,	
 	});
+var popup29 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
 
 
 	L.marker (quoteOne).addTo(map).bindPopup(popup1.setContent('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwo).addTo(map).bindPopup(popup2.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote2.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteThree).addTo(map).bindPopup(popup3.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote3.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteFour).addTo(map).bindPopup(popup4.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote4.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteFive).addTo(map).bindPopup(popup5.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote5.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteSix).addTo(map).bindPopup(popup6.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote6.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteSeven).addTo(map).bindPopup(popup7.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote7.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteEight).addTo(map).bindPopup(popup8.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote8.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteNine).addTo(map).bindPopup(popup9.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote9.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTen).addTo(map).bindPopup(popup10.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote10.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteEleven).addTo(map).bindPopup(popup11.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote11.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwelve).addTo(map).bindPopup(popup12.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote12.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteThirteen).addTo(map).bindPopup(popup13.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote13.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteFourteen).addTo(map).bindPopup(popup14.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote14.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteFifteen).addTo(map).bindPopup(popup15.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote15.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteSixteen).addTo(map).bindPopup(popup16.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteSeventeen).addTo(map).bindPopup(popup17.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteEighteen).addTo(map).bindPopup(popup18.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteNinteen).addTo(map).bindPopup(popup19.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwenty).addTo(map).bindPopup(popup20.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentyOne).addTo(map).bindPopup(popup21.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentyTwo).addTo(map).bindPopup(popup22.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentyThree).addTo(map).bindPopup(popup23.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentyFour).addTo(map).bindPopup(popup24.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentyFive).addTo(map).bindPopup(popup25.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentySix).addTo(map).bindPopup(popup26.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentySeven).addTo(map).bindPopup(popup27.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteTwentyEight).addTo(map).bindPopup(popup28.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	
+	L.marker (quoteTwo).addTo(map).bindPopup(popup2.setContent ('<div class="scroll-wrapper"> <iframe id="quote2" src="https://cpmmckeown.github.io/quote2.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteThree).addTo(map).bindPopup(popup3.setContent ('<div class="scroll-wrapper"> <iframe id="quote3" src="https://cpmmckeown.github.io/quote3.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFour).addTo(map).bindPopup(popup4.setContent ('<div class="scroll-wrapper"> <iframe id="quote4" src="https://cpmmckeown.github.io/quote4.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFive).addTo(map).bindPopup(popup5.setContent ('<div class="scroll-wrapper"> <iframe id="quote5" src="https://cpmmckeown.github.io/quote5.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSix).addTo(map).bindPopup(popup6.setContent ('<div class="scroll-wrapper"> <iframe id="quote6" src="https://cpmmckeown.github.io/quote6.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSeven).addTo(map).bindPopup(popup7.setContent ('<div class="scroll-wrapper"> <iframe id="quote7" src="https://cpmmckeown.github.io/quote7.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEight).addTo(map).bindPopup(popup8.setContent ('<div class="scroll-wrapper"> <iframe id="quote8" src="https://cpmmckeown.github.io/quote8.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteNine).addTo(map).bindPopup(popup9.setContent ('<div class="scroll-wrapper"> <iframe id="quote9" src="https://cpmmckeown.github.io/quote9.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTen).addTo(map).bindPopup(popup10.setContent ('<div class="scroll-wrapper"> <iframe id="quote10" src="https://cpmmckeown.github.io/quote10.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEleven).addTo(map).bindPopup(popup11.setContent ('<div class="scroll-wrapper"> <iframe id="quote11" src="https://cpmmckeown.github.io/quote11.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwelve).addTo(map).bindPopup(popup12.setContent ('<div class="scroll-wrapper"> <iframe id="quote12" src="https://cpmmckeown.github.io/quote12.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteThirteen).addTo(map).bindPopup(popup13.setContent ('<div class="scroll-wrapper"> <iframe id="quote13" src="https://cpmmckeown.github.io/quote13.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFourteen).addTo(map).bindPopup(popup14.setContent ('<div class="scroll-wrapper"> <iframe id="quote14" src="https://cpmmckeown.github.io/quote14.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFifteen).addTo(map).bindPopup(popup15.setContent ('<div class="scroll-wrapper"> <iframe id="quote15" src="https://cpmmckeown.github.io/quote15.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSixteen).addTo(map).bindPopup(popup16.setContent ('<div class="scroll-wrapper"> <iframe id="quote16" src="https://cpmmckeown.github.io/quote16.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSeventeen).addTo(map).bindPopup(popup17.setContent ('<div class="scroll-wrapper"> <iframe id="quote17" src="https://cpmmckeown.github.io/quote17.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEighteen).addTo(map).bindPopup(popup18.setContent ('<div class="scroll-wrapper"> <iframe id="quote18" src="https://cpmmckeown.github.io/quote18.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteNinteen).addTo(map).bindPopup(popup19.setContent ('<div class="scroll-wrapper"> <iframe id="quote19" src="https://cpmmckeown.github.io/quote19.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwenty).addTo(map).bindPopup(popup20.setContent ('<div class="scroll-wrapper"> <iframe id="quote20" src="https://cpmmckeown.github.io/quote20.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyOne).addTo(map).bindPopup(popup21.setContent ('<div class="scroll-wrapper"> <iframe id="quote21" src="https://cpmmckeown.github.io/quote21.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyTwo).addTo(map).bindPopup(popup22.setContent ('<div class="scroll-wrapper"> <iframe id="quote22" src="https://cpmmckeown.github.io/quote22.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyThree).addTo(map).bindPopup(popup23.setContent ('<div class="scroll-wrapper"> <iframe id="quote23" src="https://cpmmckeown.github.io/quote23.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyFour).addTo(map).bindPopup(popup24.setContent ('<div class="scroll-wrapper"> <iframe id="quote24" src="https://cpmmckeown.github.io/quote24.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyFive).addTo(map).bindPopup(popup25.setContent ('<div class="scroll-wrapper"> <iframe id="quote25" src="https://cpmmckeown.github.io/quote25.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentySix).addTo(map).bindPopup(popup26.setContent ('<div class="scroll-wrapper"> <iframe id="quote26" src="https://cpmmckeown.github.io/quote26.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentySeven).addTo(map).bindPopup(popup27.setContent ('<div class="scroll-wrapper"> <iframe id="quote27" src="https://cpmmckeown.github.io/quote27.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyEight).addTo(map).bindPopup(popup28.setContent ('<div class="scroll-wrapper"> <iframe id="quote28" src="https://cpmmckeown.github.io/quote28.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyNine).addTo(map).bindPopup(popup29.setContent ('<div class="scroll-wrapper"> <iframe id="quote29" src="https://cpmmckeown.github.io/quote29.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+
 	//L.marker(topLeft).addTo(map).bindPopup('top left');
 	//L.marker(topRight).addTo(map).bindPopup('top right');
 	//L.marker(bottomRight).addTo(map).bindPopup('bottom right');
