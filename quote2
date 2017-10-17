@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+
+	.audio {
+    margin-right: 100px;
+    margin-left: 300px;
+	width: 300px;
+	box-shadow: 0px 3px 3px #888888; 
+	}
+
+	.center {
+    	margin: auto;
+	width: 90%;
+    padding: 5px;
+	box-shadow: 0px 10px 30px #888888; 
+}
+
+body {
+  background-color: #222;
+	}
+
+	.plate {
+  width: 410px;
+  margin: 5% auto;
+}
+	
+
+	.shadow {
+  color: #fff;
+  font-family: Inconsolata;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+   text-align: left;
+}
+.script {
+  font-family: "Seaweed Script";
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  margin:0;
+}
+.script span {
+  background-color: #222;
+  padding: 0 0.3em;
+}
+.script:before {
+  content:"";
+  display: block;
+  position: absolute;
+  z-index:-1;
+  top: 50%;
+  width: 100%;
+  border-bottom: 3px solid #fff;
+}
+
+.subtitle {
+color: #fff;
+  text-align: center;
+}
+
+.text1 {
+  font-size: 20px;
+}
+.text2 {
+  font-size: 169px;
+}
+.text3 {
+  font-size: 100px;
+}
+</style>
+</head>
+<body>
+	<div class="audio">
+	<audio controls="true">
+	<source src="http://k003.kiwi6.com/hotlink/krgmlv90k0/Quote_12.mp3" type="audio/mpeg">
+	</audio>
+	
+	</div>
+	<div class="center">
+	<img src="https://wellcomeimages.org/indexplus/obf_images/5e/3c/598d3f97f84d755db9a8fa3a3e95.jpg" height = "250" width = "700" style="width:100%">
+	</div>
+	
+	<div class="plate">
+	<p class="script"><span>Young Thomas Aikenhead Races to His Father’s Shopy</span></p>
+	<p class="subtitle"> Narrated by Dr Carruth </p>
+	<p class="shadow text1">
+	
+	It’s like I’m flying. Never moved so fast in my life. Out the door. Three big leaps along the landing. Down the stairs. Two at a time. Three at a time. Jumping and flying and never falling. Mother squealing up above. She’ll not catch me now. 
+Into the close and bang-crash into the Keep-Count Man. He doesn’t fall but thon book he carries flaps out of his hand and splatters into a puddle. 
+“Watch where yir going, yi wee skitter!” he gulders, but I’m away again. 
+Up the wynds, hopscotching over the middens, holding my breath through Bad-Smell Close, crossing my fingers past Dead-Bairn Close, and at last I’m up on the big road. Check over my shoulder in case Mother is after me. No sign of her. My heart’s going thump-thump-thump. I suck in big deep breaths. When I breathe out it looks like I’ve got smoke coming out of my nose. It’s that cold. Big men and women push past. They dinnae pay me any mind. They’re too busy watching the soldiers march along, all tramp-tramp-jingle-jangle. 
+Along the big road. Cut across the kirkyard, fast as I can, dinnae look left, dinnae look right, dinnae look at the gravestones, fifty-three big steps from one side to the other. Nearly at Dada’s shop. Slow past the coffee house, so as to sniff the air. It smells warm and – not sweet... something else. I don’t have the word for it, but I like it. There’s Dada’s sign, swinging above his shop door. A painted green snake curled round a stick. I stop and look up at it. Squeeze my eyes almost shut. Makes it look like the snake is moving. Wriggling and wiggling. It’s the best sign in the whole of Edinburgh. Dada says Mr Fenton across the way wishes he had a sign like ours. 
+https://www.vagabondvoices.co.uk/shop-vagabonds/doubting-thomas
+
+
+
+ </p>
+	</div>
+	
+	
+</body>
+</html> 
