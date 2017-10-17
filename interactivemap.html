@@ -100,26 +100,54 @@
 	var map = L.map('map', {
 		crs: L.CRS.Simple,
 		minZoom: 0
-	});
+		});
+
 	var yx = L.latLng;
 	var xy = function(x, y) {
-		if (L.Util.isArray(x)) {    // When doing xy([x, y]);
-			return yx(x[1], x[0]);
-		}
+			if (L.Util.isArray(x)) {    // When doing xy([x, y]);
+				return yx(x[1], x[0]);
+				}
 		return yx(y, x);  // When doing xy(x, y);
-	};
+		};
+	
 	var bounds = [xy(-25, -26.5), xy(1023, 1021.5)];
-	var image = L.imageOverlay('', bounds).addTo(map);
-	var topLeft      = xy(70, 850);
-	var topRight    = xy( 940, 850);
+	
+	var image = L.imageOverlay('https://gamestudiesisdead.files.wordpress.com/2017/10/nls-1.jpg', bounds).addTo(map);
+	
+	//var topLeft      = xy(70, 850);
+	//var topRight    = xy( 940, 850);
+	//var bottomRight = xy( 940,  140);
+	//var bottomLeft    = xy(70, 140);
+		
 	var quoteOne = xy (450, 285);
+	var quoteTwo = xy (400, 350);
+	var quoteThree = xy (270, 420);
+	var quoteFour = xy (300, 550);
+	var quoteFive = xy (200, 285);
+	var quoteSix = xy (310, 430);
+	var quoteSeven = xy (730, 600);
 	var quoteEight = xy (450, 275);
 	var quoteNine = xy (430, 285);
+	var quoteTen = xy (420, 320);
+	var quoteEleven = xy (230, 385);
+	var quoteTwelve = xy (740, 250);
+	var quoteThirteen = xy (575, 255);
 	var quoteFourteen = xy (450, 295);
+	var quoteFifteen = xy (420, 390);
+	var quoteSixteen = xy (585, 275);
+	var quoteSeventeen = xy (900, 800);
+	var quoteEighteen = xy (270, 400);
+	var quoteNinteen = xy (260, 390);
+	var quoteTwenty = xy (250, 350);
+	var quoteTwentyOne = xy (240, 340);
+	var quoteTwentyTwo = xy (950, 860);
+	var quoteTwentyThree = xy (960, 870);
 	var quoteTwentyFour = xy (463, 285);
+	var quoteTwentyFive = xy (470, 520);
+	var quoteTwentySix = xy (465, 265);
+	var quoteTwentySeven = xy (250, 390);
+	var quoteTwentyEight = xy (550, 550);
 	
-	var bottomRight = xy( 940,  140);
-	var bottomLeft    = xy(70, 140);
 	
 	<!--
 	//this is for the potential video idea
@@ -180,18 +208,218 @@ var popup6 = L.popup ({
 	minWidth:800,
 	maxWidth: 640,	
 	});
+var popup7 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup8 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup9 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup10 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup11 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup12 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup13 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup14 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup15 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup16 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup17 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup18 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup19 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup20 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup21 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup22 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup23 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup24 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup25 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup26 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup27 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+var popup28 = L.popup ({
+	keepInView: true,
+	autoPan: true,
+  	closeButton: false,
+  	closeOnClick: true,
+	minWidth:800,
+	maxWidth: 640,	
+	});
+
+
+	L.marker (quoteOne).addTo(map).bindPopup(popup1.setContent('<div class="scroll-wrapper"> <iframe id="quote1" src="quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwo).addTo(map).bindPopup(popup2.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote2.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteThree).addTo(map).bindPopup(popup3.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote3.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFour).addTo(map).bindPopup(popup4.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote4.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFive).addTo(map).bindPopup(popup5.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote5.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSix).addTo(map).bindPopup(popup6.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote6.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSeven).addTo(map).bindPopup(popup7.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote7.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEight).addTo(map).bindPopup(popup8.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote8.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteNine).addTo(map).bindPopup(popup9.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote9.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTen).addTo(map).bindPopup(popup10.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote10.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEleven).addTo(map).bindPopup(popup11.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote11.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwelve).addTo(map).bindPopup(popup12.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote12.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteThirteen).addTo(map).bindPopup(popup13.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote13.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFourteen).addTo(map).bindPopup(popup14.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote14.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteFifteen).addTo(map).bindPopup(popup15.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="quote15.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSixteen).addTo(map).bindPopup(popup16.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteSeventeen).addTo(map).bindPopup(popup17.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteEighteen).addTo(map).bindPopup(popup18.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteNinteen).addTo(map).bindPopup(popup19.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwenty).addTo(map).bindPopup(popup20.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyOne).addTo(map).bindPopup(popup21.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyTwo).addTo(map).bindPopup(popup22.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyThree).addTo(map).bindPopup(popup23.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyFour).addTo(map).bindPopup(popup24.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyFive).addTo(map).bindPopup(popup25.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentySix).addTo(map).bindPopup(popup26.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentySeven).addTo(map).bindPopup(popup27.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
+	L.marker (quoteTwentyEight).addTo(map).bindPopup(popup28.setContent ('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
 	
-	L.marker(topLeft).addTo(map).bindPopup('top left');
+	//L.marker(topLeft).addTo(map).bindPopup('top left');
+	//L.marker(topRight).addTo(map).bindPopup('top right');
+	//L.marker(bottomRight).addTo(map).bindPopup('bottom right');
+	//L.marker(bottomLeft).addTo(map).bindPopup('bottom left');
 	
-	L.marker (quoteOne).addTo(map).bindPopup(popup1.setContent('<div class="scroll-wrapper"> <iframe id="quote1" src="https://cpmmckeown.github.io/quote1.html" height="450" style="width:100%" webkitAllowFullScreen mozallowfullscreen allowFullScreen> </iframe> </div>'));
-	L.marker (quoteEight).addTo(map).bindPopup(popup2.setContent (''));
-	L.marker (quoteNine).addTo(map).bindPopup(popup3.setContent (''));
-	L.marker (quoteFourteen).addTo(map).bindPopup(popup4.setContent (''));
-	L.marker (quoteTwentyFour).addTo(map).bindPopup(popup5.setContent (''));
-	
-	L.marker(topRight).addTo(map).bindPopup('top right');
-	L.marker(bottomRight).addTo(map).bindPopup('bottom right');
-	L.marker(bottomLeft).addTo(map).bindPopup('bottom left');
 	//var travel = L.polyline([bottomRight, bottomLeft]).addTo(map);
 	//if lines need to connect things?
 	map.setView(xy(500, 500), 0);
