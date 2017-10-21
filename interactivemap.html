@@ -21,9 +21,12 @@
 			background-color: #DCDCDC;
 			}
 		#map {
-			margin: auto;
-			width: auto;
-			height: 800px;
+			margin-top: 30px;
+			margin-bottom: auto;
+			margin-left: auto;
+			margin-right: auto;
+			width: 1500px;
+			height: 900px;
 			}
 		
 .center {
@@ -97,57 +100,62 @@
 <div id='map'></div>
 
 <script>
-	var map = L.map('map', {
+	var map = L.map('map', 
+		{
+		center: [500, 1000],
+		zoom: 2,
 		crs: L.CRS.Simple,
-		minZoom: 0
 		});
-
+	
 	var yx = L.latLng;
-	var xy = function(x, y) {
-			if (L.Util.isArray(x)) {    // When doing xy([x, y]);
+	var xy = function(x, y) 
+		{
+			if (L.Util.isArray(x)) 
+				{    // When doing xy([x, y]);
 				return yx(x[1], x[0]);
 				}
 		return yx(y, x);  // When doing xy(x, y);
 		};
 	
-	var bounds = [xy(-25, -26.5), xy(1023, 1021.5)];
+	var bounds = [xy(-100, -25), xy(1500, 1000)];
+		
+	var image = L.imageOverlay('https://cpmmckeown.github.io/MapResizedEvenMore.jpg', bounds).addTo(map);
 	
-	var image = L.imageOverlay('cpmmckeown.github.io/MapResizedEvenMore.jpg', bounds).addTo(map);
 	
 	//var topLeft      = xy(70, 850);
 	//var topRight    = xy( 940, 850);
 	//var bottomRight = xy( 940,  140);
 	//var bottomLeft    = xy(70, 140);
 		
-	var quoteOne = xy (450, 285);
-	var quoteTwo = xy (400, 350);
-	var quoteThree = xy (270, 420);
-	var quoteFour = xy (300, 550);
-	var quoteFive = xy (200, 285);
-	var quoteSix = xy (310, 430);
-	var quoteSeven = xy (730, 600);
-	var quoteEight = xy (450, 275);
-	var quoteNine = xy (430, 285);
-	var quoteTen = xy (420, 320);
-	var quoteEleven = xy (230, 385);
-	var quoteTwelve = xy (740, 250);
-	var quoteThirteen = xy (575, 255);
-	var quoteFourteen = xy (450, 295);
-	var quoteFifteen = xy (420, 390);
-	var quoteSixteen = xy (585, 275);
-	var quoteSeventeen = xy (900, 800);
-	var quoteEighteen = xy (270, 400);
-	var quoteNinteen = xy (260, 390);
-	var quoteTwenty = xy (250, 350);
-	var quoteTwentyOne = xy (240, 340);
-	var quoteTwentyTwo = xy (950, 860);
-	var quoteTwentyThree = xy (960, 870);
-	var quoteTwentyFour = xy (463, 285);
-	var quoteTwentyFive = xy (470, 520);
-	var quoteTwentySix = xy (465, 265);
-	var quoteTwentySeven = xy (250, 390);
-	var quoteTwentyEight = xy (550, 550);
-	var quoteTwentyNine = xy (540, 530);
+	var quoteOne = xy (650, 285);
+	var quoteTwo = xy (600, 350);
+	var quoteThree = xy (470, 420);
+	var quoteFour = xy (500, 550);
+	var quoteFive = xy (400, 285);
+	var quoteSix = xy (510, 430);
+	var quoteSeven = xy (930, 600);
+	var quoteEight = xy (650, 275);
+	var quoteNine = xy (630, 285);
+	var quoteTen = xy (620, 320);
+	var quoteEleven = xy (430, 385);
+	var quoteTwelve = xy (940, 250);
+	var quoteThirteen = xy (775, 255);
+	var quoteFourteen = xy (650, 295);
+	var quoteFifteen = xy (620, 390);
+	var quoteSixteen = xy (785, 275);
+	var quoteSeventeen = xy (1100, 800);
+	var quoteEighteen = xy (470, 400);
+	var quoteNinteen = xy (460, 390);
+	var quoteTwenty = xy (450, 350);
+	var quoteTwentyOne = xy (440, 340);
+	var quoteTwentyTwo = xy (1150, 860);
+	var quoteTwentyThree = xy (1160, 870);
+	var quoteTwentyFour = xy (663, 285);
+	var quoteTwentyFive = xy (670, 520);
+	var quoteTwentySix = xy (665, 265);
+	var quoteTwentySeven = xy (450, 390);
+	var quoteTwentyEight = xy (750, 550);
+	var quoteTwentyNine = xy (740, 530);
 	
 	<!--
 	//this is for the potential video idea
@@ -431,7 +439,7 @@ var popup29 = L.popup ({
 	
 	//var travel = L.polyline([bottomRight, bottomLeft]).addTo(map);
 	//if lines need to connect things?
-	map.setView(xy(500, 500), 0);
+	map.setView(xy(700, 500), 0);
 </script>
 
 
