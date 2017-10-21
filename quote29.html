@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="windows-1252" name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
-@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
 	.audio {
 	display: block;
 	margin-left: auto;
     margin-right: auto;
+	margin-bottom: 50px;
 	width: 300px;
 	box-shadow: 0px 3px 3px #888888; 
+	opacity: 0.5;
+    filter: alpha(opacity=50);
 	}
 
 	.center {
-    	margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+	width: 90%;
     padding: 5px;
 	box-shadow: 0px 10px 30px #888888; 
-}
+		}
 
-IMG.center {
+	IMG.center {
     display: block;
 	margin-left: auto;
     margin-right: auto;
+	margin-bottom: 50px;
+	height: 35%;
+	width: 35%;
     padding: 5px;
-	height: 30%;
-	width: 30%;
 	}
 
-body {
-  background-color: #222;
+	body {
+  background-color: #FAF6F5;
 	}
 
 	.plate {
-  width: 410px;
-  margin: 5% auto;
-}
+  width: 460px;
+  margin: 2% auto;
+  font-family: "IM Fell English SC";
+  color: #2B2B2A;
+			}
 	
 
 	.shadow {
-  color: #fff;
-  font-family: Inconsolata;
-  line-height: 1em;
+  color: #2B2B2A;
+  font-family: "IM Fell English SC";
+  line-height: 1.5em;
   letter-spacing: 0.1em;
    text-align: left;
-}
+		}
+
 .script {
-  font-family: "Seaweed Script";
-  color: #fff;
+  font-family: "IM Fell English SC";
+  color: #2B2B2A;
   text-align: center;
   font-size: 40px;
   position: relative;
   margin:0;
-}
+		}
+
 .script span {
-  background-color: #222;
+  background-color: #FAF6F5;
   padding: 0 0.3em;
 }
+
 .script:before {
   content:"";
   display: block;
   position: absolute;
-  z-index:-1;
+  z-index: -1;
   top: 50%;
   width: 100%;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #2B2B2A;
 }
 
 .subtitle {
-color: #fff;
+color: #2B2B2A;
   text-align: center;
 }
 
@@ -84,61 +93,94 @@ color: #fff;
 .text3 {
   font-size: 100px;
 }
+
 </style>
 </head>
 <body>
-	
+	<div class="plate">
+	<p class="script"><span style="color: #2B2B2A">Grim Revelation</span></p>
+	<p class="subtitle">narrated by Isobel Carruth</p>
+	</div>
+<!--
+	<div>
+	<img class="center" src="http://www.oldandnewedinburgh.co.uk/images/pictures/v5p184pic.gif">
+	</div>
+-->
 	<div class="audio">
-	<audio controls="true">
-	<source src="https://cpmmckeown.github.io/Quote 29.mp3" type="audio/mpeg">
-	</audio>
+	<iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347449374&amp;color=%23990000&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 	
-	
-	<!-- <div>
-	<img class="center" src="">
-	</div>  -->
-	
-	
 	<div class="plate">
-	<p class="script"><span>Grim Revelation </span></p>
-	<p class="subtitle">narrated by Isobel Carruth</p>
+	<p class="shadow text1">
+	The binding is unfamiliar. I turn to the title page: <a href"https://quod.lib.umich.edu/e/evans/N07112.0001.001/1:1?rgn=div1;view=fulltext" target="_blank" style="color: #990000; text-decoration: none"> A Relation of the Fearful Estate of Francis Spira <a>
+	</p>
+		
+	<p class="shadow text1">
+	A vague memory stirs. Yes, I remember the tale – an old one, about the wickedness of the Roman Church. Spira had been compelled to recant his Protestantism, and in the process had lost all faith and died in despair. ...When I first turned its pages my faith was strong and I had pitied poor Francis Spira as his own belief fell away. But now I wonder if even then some seed was planted that came to fruition these last few months. The very idea that religious faith could die – I had probably never considered it before first reading this book. Did it work in the same manner on Thomas? He had only been a child when it came into his possession. Even with his precocious talent, it would have been beyond him, would it not? I do not know. I can be sure of nothing.  
+	</p>
+<!--	
+	<p class="shadow text1">
+	I feel affronted that he takes me for one such as the men I passed. I straighten my stance and adjust the buttons on my coat, to draw his attention to my respectable attire. “You mistake my purpose, sir. I am a student from the university, in search of nothing more than a breath of sea air.”  
+	</p>
 	
 	<p class="shadow text1">
-The binding is unfamiliar. I turn to the title page: <a href="https://quod.lib.umich.edu/e/evans/N07112.0001.001/1:1?rgn=div1;view=fulltext" style="color:red;font-family:arial;text-decoration:none;"> A Relation of the Fearful Estate of Francis Spira </a>
+	He inspects me again. “Aye, right enough,” he says. “You’ve a dockman’s shoulders but a scholar’s hands. No good to me.”  
+	</p>
+	
+	<p class="shadow text1">
+	“How is trade?” I ask, remembering this is a favoured subject for those who worked the Shore.  
 	</p>
 
-<p class="shadow text1">
-A vague memory stirs. Yes, I remember the tale – an old one, about the wickedness of the Roman Church. Spira had been compelled to recant his Protestantism, and in the process had lost all faith and died in despair. ...When I first turned its pages my faith was strong and I had pitied poor Francis Spira as his own belief fell away. But now I wonder if even then some seed was planted that came to fruition these last few months. The very idea that religious faith could die – I had probably never considered it before first reading this book. Did it work in the same manner on Thomas? He had only been a child when it came into his possession. Even with his precocious talent, it would have been beyond him, would it not? I do not know. I can be sure of nothing.  
-
-</p>
- <!--
-<p class="shadow text1">
-
-
-</p>
-
-<p class="shadow text1">
-
-
-</p>
-
-<p class="shadow text1">	
- 
-</p>
-
-<p class="shadow text1">
+	<p class="shadow text1">
+	He shakes his head. “Poor enough. The only goods we send out into the world are wool and soldiers. There’s always a market for soldiers, but little enough demand for good Scottish wool these days.” He takes a pipe from his coat and pats his pockets in search – I presume – of tobacco. Finding none he replaces the pipe.  
+	</p>
 	
-</p>
+	<p class="shadow text1">
+	For a brief moment I entertain the idea of joining one of the regiments, but dismiss it at once. Without money or friends to secure me a commission I would have to be a common soldier, and I could not endure that. “When will these boats sail?” I ask, looking over at them.  
+	</p>
+	
+	<p class="shadow text1">
+	“On the evening tide. The Anne Maria and the Whiffler are bound for Hull, and the Minora for Flanders. Are you after a passage?”  
+	</p>
+	
+	<p class="shadow text1">
+	“No, no, I asked only to make conversation.”  
+	</p>
+	
+	<p class="shadow text1">
+	“Aye. If you’ll take my advice, a young man such as yourself should set his sights on America. They’ve got towns as big as Edinburgh now.”  
+	</p>
 
-<p class="shadow text1">
- 
-</p> -->
+	<p class="shadow text1">
+“She’ll be back, you wait and see.” Thomas walks to the corner where a wynd runs down the side of the house. “As I recall his consulting room was towards the back of the house. I’m away to have a keek through the window.” 
+	</p>
 	
- <a href="https://www.vagabondvoices.co.uk/shop-vagabonds/doubting-thomas" style="color:red;font-family:arial;text-decoration:none;">Doubting Thomas</a>
- <p style="color: #fff">Read by Trisha Mullin </p>
- 
+	<p class="shadow text1">
+Patrick and I exchange a glance. He looks as fearful as I feel. “Have a bit of wit, Thomas,” I call after him as he skites down the wynd. “They’ll have the town watch on us if they catch you snooping.” 
+	</p>
 	
+	<p class="shadow text1">
+Thomas ignores me and stands on tiptoe looking in through the window. “He has a wall-full of books,” he says. “How would you like to have so many volumes, Mungo?” 
+	</p>
+	
+	<p class="shadow text1">
+The front door opens again just as Thomas scrambles back up the wynd. The servant woman nods us in. 
+	</p>
+	-->
+	
+	
+	<p class="shadow text1">
+	Excerpted from <i>Doubting Thomas</i> by Heather Richardson (Vagabond Voices, 2017). 
+	<a href="https://www.vagabondvoices.co.uk/shop-vagabonds/doubting-thomas" target="_blank" style="color: #990000; text-decoration: none" > Click here to learn more about the book. </a>
+	</p>
+<!--
+	<p class="shadow text1">
+	<a href="https://upload.wikimedia.org/wikipedia/commons/a/ac/Netherbow_Port.jpg" target="_blank" style="color: #990000; text-decoration: none"> Image: From James Grant's Old And New Edinburgh (1880), based on Gordon of Rothiemay's map (1647) </a>
+	</p>
+-->
+	<p style="color:#2B2B2A"> 
+	Read by Trish Mullin
+	</p>
 	
 	</div>
 	

@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="windows-1252" name="viewport" content="width=device-width, initial-scale=1">
 <style>
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
-@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
 	.audio {
 	display: block;
 	margin-left: auto;
     margin-right: auto;
+	margin-bottom: 50px;
 	width: 300px;
 	box-shadow: 0px 3px 3px #888888; 
+	opacity: 0.5;
+    filter: alpha(opacity=50);
 	}
 
 	.center {
-    	margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+	width: 90%;
     padding: 5px;
 	box-shadow: 0px 10px 30px #888888; 
-}
+		}
 
-IMG.center {
+	IMG.center {
     display: block;
 	margin-left: auto;
     margin-right: auto;
+	margin-bottom: 50px;
+	height: 35%;
+	width: 35%;
     padding: 5px;
-	height: 30%;
-	width: 30%;
 	}
 
-body {
-  background-color: #222;
+	body {
+  background-color: #FAF6F5;
 	}
 
 	.plate {
-  width: 410px;
-  margin: 5% auto;
-}
+  width: 460px;
+  margin: 2% auto;
+  font-family: "IM Fell English SC";
+  color: #2B2B2A;
+			}
 	
 
 	.shadow {
-  color: #fff;
-  font-family: Inconsolata;
-  line-height: 1em;
+  color: #2B2B2A;
+  font-family: "IM Fell English SC";
+  line-height: 1.5em;
   letter-spacing: 0.1em;
    text-align: left;
-}
+		}
+
 .script {
-  font-family: "Seaweed Script";
-  color: #fff;
+  font-family: "IM Fell English SC";
+  color: #2B2B2A;
   text-align: center;
   font-size: 40px;
   position: relative;
   margin:0;
-}
+		}
+
 .script span {
-  background-color: #222;
+  background-color: #FAF6F5;
   padding: 0 0.3em;
 }
+
 .script:before {
   content:"";
   display: block;
   position: absolute;
-  z-index:-1;
+  z-index:;
   top: 50%;
   width: 100%;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #2B2B2A;
 }
 
 .subtitle {
-color: #fff;
+color: #2B2B2A;
   text-align: center;
 }
 
@@ -84,74 +93,94 @@ color: #fff;
 .text3 {
   font-size: 100px;
 }
+
 </style>
 </head>
 <body>
-	
+	<div class="plate">
+	<p class="script"><span style="color: #2B2B2A">A Middling Sort of Place</span></p>
+	<p class="subtitle">Isobel Carruth Visits Thomas Aikenhead’s Sister, Katharine</p>
+	</div>
+
+	<div>
+	<img class="center" src="http://www.oldandnewedinburgh.co.uk/images/pictures/v5p184pic.gif">
+	</div>
+
 	<div class="audio">
-	<audio controls="true">
-	<source src="https://cpmmckeown.github.io/Quote 28.mp3" type="audio/mpeg">
-	</audio>
+	<iframe width="100%" height="64" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/347449166&amp;color=%23990000&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
 	</div>
 	
-	
-	<div>
-	<img class="center" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Netherbow_Port.jpg">
-	</div> 
-	
-	
 	<div class="plate">
-	<p class="script"><span>A Middling Sort of Place </span></p>
-	<p class="subtitle">Isobel Carruth Visits Frazer at the Tolbooth Prison</p>
+	<p class="shadow text1">
+	Katharine’s lodgings are on the fourth floor of a tall tenement. It is a middling sort of place, for while I am nearly knocked to one side by an ill-fed barefoot child hurtling down the stairs – his mother’s cries of abuse echoing after him down the stairwell – I also find my progress across the fourth floor landing observed by a respectable-looking widow woman peering out of her door. It is, therefore, like so many Edinburgh tenements: a place the poor might aspire to, and the genteel descend to.  
+	</p>
+<!--		
+	<p class="shadow text1">
+	“You’re a bit late in the day to be looking for work,” he says.  
+	</p>
 	
 	<p class="shadow text1">
-“We live in a world where piety must be made a show of, as much as penance,” I say.
-Frazer looks at me intently. “But do you not think, Mistress Carruth, that the most sincere believer may be the one that bears his faith in the quiet depths of his heart?”
-
+	I feel affronted that he takes me for one such as the men I passed. I straighten my stance and adjust the buttons on my coat, to draw his attention to my respectable attire. “You mistake my purpose, sir. I am a student from the university, in search of nothing more than a breath of sea air.”  
+	</p>
+	
+	<p class="shadow text1">
+	He inspects me again. “Aye, right enough,” he says. “You’ve a dockman’s shoulders but a scholar’s hands. No good to me.”  
+	</p>
+	
+	<p class="shadow text1">
+	“How is trade?” I ask, remembering this is a favoured subject for those who worked the Shore.  
 	</p>
 
-<p class="shadow text1">
-“The world seems to like evidence.”  
-
-</p>
-
-<p class="shadow text1">
-“I make my best efforts to provide that. Divine service as often as they will allow. The reading of worthy literature,” – here he points at a small pile of books set on a low shelf – “to say nothing of loud prayer when I hear footsteps in the corridor.” He leans forward and rests his head in his hands.
-
-</p>
-
-<p class="shadow text1">
-“And what about in the quiet depths of your heart?” I say softly. He looks up at me with anguish, and I know then that he is still tortured by doubt. The rigour of the law has quelled his outward acts, but it cannot silence the questions of his mind. 
-
- </p>
-
- <!--
-<p class="shadow text1">
-
-
-</p>
-
-<p class="shadow text1">
-
-
-</p>
-
-<p class="shadow text1">	
- 
-</p>
-
-<p class="shadow text1">
+	<p class="shadow text1">
+	He shakes his head. “Poor enough. The only goods we send out into the world are wool and soldiers. There’s always a market for soldiers, but little enough demand for good Scottish wool these days.” He takes a pipe from his coat and pats his pockets in search – I presume – of tobacco. Finding none he replaces the pipe.  
+	</p>
 	
-</p>
+	<p class="shadow text1">
+	For a brief moment I entertain the idea of joining one of the regiments, but dismiss it at once. Without money or friends to secure me a commission I would have to be a common soldier, and I could not endure that. “When will these boats sail?” I ask, looking over at them.  
+	</p>
+	
+	<p class="shadow text1">
+	“On the evening tide. The Anne Maria and the Whiffler are bound for Hull, and the Minora for Flanders. Are you after a passage?”  
+	</p>
+	
+	<p class="shadow text1">
+	“No, no, I asked only to make conversation.”  
+	</p>
+	
+	<p class="shadow text1">
+	“Aye. If you’ll take my advice, a young man such as yourself should set his sights on America. They’ve got towns as big as Edinburgh now.”  
+	</p>
 
-<p class="shadow text1">
- 
-</p> -->
+	<p class="shadow text1">
+“She’ll be back, you wait and see.” Thomas walks to the corner where a wynd runs down the side of the house. “As I recall his consulting room was towards the back of the house. I’m away to have a keek through the window.” 
+	</p>
 	
- <a href="https://www.vagabondvoices.co.uk/shop-vagabonds/doubting-thomas" style="color:red;font-family:arial;text-decoration:none;">Doubting Thomas</a>
- <p style="color: #fff">Read by Trisha Mullin </p>
- 
+	<p class="shadow text1">
+Patrick and I exchange a glance. He looks as fearful as I feel. “Have a bit of wit, Thomas,” I call after him as he skites down the wynd. “They’ll have the town watch on us if they catch you snooping.” 
+	</p>
 	
+	<p class="shadow text1">
+Thomas ignores me and stands on tiptoe looking in through the window. “He has a wall-full of books,” he says. “How would you like to have so many volumes, Mungo?” 
+	</p>
+	
+	<p class="shadow text1">
+The front door opens again just as Thomas scrambles back up the wynd. The servant woman nods us in. 
+	</p>
+	-->
+	
+	
+	<p class="shadow text1">
+	Excerpted from <i>Doubting Thomas</i> by Heather Richardson (Vagabond Voices, 2017). 
+	<a href="https://www.vagabondvoices.co.uk/shop-vagabonds/doubting-thomas" target="_blank" style="color: #990000; text-decoration: none" > Click here to learn more about the book. </a>
+	</p>
+
+	<p class="shadow text1">
+	<a href="https://upload.wikimedia.org/wikipedia/commons/a/ac/Netherbow_Port.jpg" target="_blank" style="color: #990000; text-decoration: none"> Image: From James Grant's Old And New Edinburgh (1880), based on Gordon of Rothiemay's map (1647) </a>
+	</p>
+
+	<p style="color:#2B2B2A"> 
+	Read by Trish Mullin
+	</p>
 	
 	</div>
 	
