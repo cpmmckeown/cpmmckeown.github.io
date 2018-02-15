@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+#characters{
+	margin-left: 50%;
+}
+#sort{
+	margin-left: 50%;
+}
+</style>
+</head>
+<body>
+<ul id="characters">
+<li class="man" id="1">Luke</li>
+<li class="man" id="2">Han</li>
+<li class="man" id="3">Darth</li>
+<li class="woman" id="4">Padme</li>
+<li class="woman" id="5">Rey</li>
+<li class="woman" id="6">Jyn</li>
+</ul>
+<div>
+<button id="sort" onclick=sort()>Sort</button>
+</div>
+<script>
+function sort(){
+ for (i=1; i<7; i++){
+	var y = i;
+	var x = document.getElementById(y);
+	if (x.classList.contains("woman")){
+	x.innerHTML = "Princess Leia";
+	}
+ }
+}
+</script>
+</body>
+</html>
