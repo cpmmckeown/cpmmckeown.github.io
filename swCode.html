@@ -1,9 +1,5 @@
 <html>
 <head>
-	     <title>
-                Star Wars Thingy?
-        </title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 #characters{
 	margin-left: 50%;
@@ -15,10 +11,10 @@
 </head>
 <body>
 <ul id="characters">
-<li class="man" id="1">Luke</li>
+<li class="man" id="1">Luke <img src="https://lumiere-a.akamaihd.net/v1/images/luke-skywalker-main_5a38c454_461eebf5.jpeg?region=0%2C0%2C1536%2C864&width=768"></li>
 <li class="man" id="2">Han</li>
 <li class="man" id="3">Darth</li>
-<li class="woman" id="4">Padme</li>
+<li class="woman" id="4">Padme<img src="https://lumiere-a.akamaihd.net/v1/images/image_de6fe408.jpeg?height=877&width=1560&x=0&y=0"></li>
 <li class="woman" id="5">Rey</li>
 <li class="woman" id="6">Jyn</li>
 </ul>
@@ -31,7 +27,7 @@ function sort(){
 	var y = i;
 	var x = document.getElementById(y);
 	if (x.classList.contains("woman")){
-	x.innerHTML = "Princess Leia";
+	x.innerHTML = "Princes Leia <img src='https://vignette.wikia.nocookie.net/starwars/images/4/4c/ArmedAndSexyLeia-OfficialPix.jpg/revision/latest/scale-to-width-down/200?cb=20080409162052'>";
 	}
  }
 }
