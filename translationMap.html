@@ -29,7 +29,7 @@ body {width:100%;}
 {content:""; display: table;clear: both;}
 
 #map 
-{float:left;width: 700px;height: 700px; margin-top:0%;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); z-index: -1; position:fixed;}
+{float:left;width: 50%;height: 80%; margin-top:0%;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); z-index: -1; position:fixed;}
 
 a{color:#f2ba40;}
 
@@ -40,7 +40,7 @@ a{color:#f2ba40;}
 		/*contains*/
 		#bookBack
 		/*Seems to help the DIV ordering*/
-		{float:left; /*background: linear-gradient(to bottom, rgba(100, 100, 100, 0.3) 0%, rgba(255,255,255, 0.3) 100%);*/ position:fixed; width:50%; z-index: -10; margin-right:100px; height:100%; /*box-shadow: 8px 0 20px 1px rgba(100, 100, 100, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/}
+		{float:left; /*background: linear-gradient(to bottom, rgba(100, 100, 100, 0.3) 0%, rgba(255,255,255, 0.3) 100%);*/ position:fixed; width:50%; z-index: -10; margin-right:10%; height:100%; /*box-shadow: 8px 0 20px 1px rgba(100, 100, 100, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/}
 		
 		#bIMG
 		/*DIV FOR THE IMAGE*/
@@ -48,7 +48,7 @@ a{color:#f2ba40;}
 		
 		#bookCover
 		/*THE ACTUAL IMAGE THAT GOES IN THE DIV*/
-		{width: 370px; height: 500px; margin-left:20%; margin-top:10%; opacity: 1; position:relative;}
+		{width: 120%; height: 120%; margin-left:20%; margin-top:10%; opacity: 1; position:relative;}
 		
 		#bTitle
 		/*TEXT*/
@@ -81,7 +81,7 @@ h1
 </head>
 <body>
 
-<div class='row' id='backDrop' style="max-width:500px; margin-left:0%;">
+<div class='row' id='backDrop' style="max-width:35%; margin-left:0%;">
 	<div class="column" id='map'></div>
 	<div class="column" id='text'>
 		<div class="row" id='bBanner'>
@@ -252,7 +252,7 @@ h1
 	
 	//var travel = L.polyline([bottomRight, bottomLeft]).addTo(map);
 	//if lines need to connect things?
-	map.setView(xy(500, 500), -1);
+	map.setView(xy(700, 600), -1);
 </script>
 
 
