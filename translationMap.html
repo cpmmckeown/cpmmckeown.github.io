@@ -36,7 +36,7 @@ body {width: 99%; z-index:-2;}
 
 /*provides a primary space into which other columns are addded*
 #backDrop.row
-{z-index:-10; position:absolute;}		
+{overflow-y: scroll;z-index:-10; position:absolute;}		
 
 /*Main map DIV. Sits far left as added first. Pos Relative*/		
 #map 
@@ -136,18 +136,18 @@ h1
 	//IF YOU WANT TO ADD SOMETHING TO THE MAP, FIRST MAKE
 	// A NEW var WITH xy CO-ORDINATES
 	var london = xy(500, 630);
-	var lithuania = xy(920, 720);
+	var lithuania = xy(950, 680);
 	var estonia = xy(950, 830);
 	var estonia2 = xy(960, 850);
 	var estonia3 = xy(970, 840);
 	var latvia = xy(950, 760);
-	var italy = xy(715, 340);
+	var italy = xy(650, 430);
 	var italy2 = xy(720, 375);
-	var italy3 = xy(730, 350);
+	var italy3 = xy(630, 410);
 	var italy4 = xy(700, 360);
-	var finland = xy(970, 1040);
-	var sweden = xy(820, 1040);
-	var germany = xy(700, 625);
+	var finland = xy(970, 900);
+	var sweden = xy(820, 860);
+	var germany = xy(700, 655);
 	
 	//THEN, MAKE A POPUP TO GO ALONG WITH THE VAR
 	var popup1 = L.popup ({
