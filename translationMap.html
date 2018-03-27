@@ -12,27 +12,37 @@
 /*import fonts*/	
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:500|Alegreya:500|Cormorant+Garamond:600|Cormorant:600|Puritan');
 
-/*translucent background*/		
+/*translucent background - currently not enabled*/		
 body{/*background: linear-gradient(to right, rgba(200, 200, 200, 0.3) 0%, rgba(255,255,255, 0.3) 100%);*/}
-		
+
+/*Enables page-gridding*/		
 *{box-sizing:border-box;}
 
-body {width:100%;}
+/*sets link colour to match Vagabond template*/
+a{color:#f2ba40;}
 
+/*box shadow for book covers*/
+img#bookCover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+
+/*Allows page to resize*/
+body {width: 100%; z-index:-2;}
+
+/*Sets the column size for the page grid*/
 .column 
 { float: left; width: 50%;}
 
+.row:after
+{content:""; display: table; clear: both;}
+
+/*provides a primary space into which other columns are addded*
 #backDrop.row
 {z-index:-10; position:absolute;}		
-		
-.row:after
-{content:""; display: table;clear: both;}
 
+/*Main map DIV. Sits far left as added first. Pos Relative*/		
 #map 
-{float:left;width: 50%;height: 95%; margin-top:0%;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); z-index: -1; position:fixed;}
+{float:left;width: 50%;height: 95%; margin-top:0%;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); z-index: 1; position:fixed;}
 
-a{color:#f2ba40;}
-
+/*Main text area styled by column*/
 #text
 {float: left; margin-top: -20px; margin-bottom: auto; margin-left: 145%; width: 100%; height: 100%; position:relative;}
 /*contains*/
@@ -48,7 +58,7 @@ a{color:#f2ba40;}
 		
 		#bookCover
 		/*THE ACTUAL IMAGE THAT GOES IN THE DIV*/
-		{width: 120%; height: 120%; margin-left:20%; margin-top:10%; opacity: 1; position:relative;}
+		{width: 120%; height: 120%; margin-left:20%; margin-top:0%; opacity: 1; position:relative;}
 		
 		#bTitle
 		/*TEXT*/
@@ -60,20 +70,6 @@ p
 {font-size:1em; font-family: 'Alegreya Sans', sans-serif;}
 h1
 {font-size:1.7em; font-family: 'Alegreya', serif;}
-.scroll-wrapper {
-			position: relative; 
-			-webkit-overflow-scrolling: touch; 
-			overflow-y: auto; 
-			} 
-			.scroll-wrapper, 
-			.scroll-wrapper{
-			width: 20%;
-			height: 40px;
-			}
-			.scroll-wrapper::-webkit-scrollbar { 
-			/* This is the magic bit */
-			display: none;
-			}
 
 </style>
 
@@ -86,7 +82,7 @@ h1
 	<div class="column" id='text'>
 		<div class="row" id='bBanner'>
 			<div class="column" id="bookBack"></div>
-			<div class="column" id='bIMG'><a href="https://www.vagabondvoices.co.uk"><img id="bookCover" src='https://cpmmckeown.github.io/weeman-vector.svg' width='300' height='500'></a></div>
+			<div class="column" id='bIMG'><a href="https://www.vagabondvoices.co.uk"><img src='https://cpmmckeown.github.io/weeman-vector.svg' width='120%' height='150%' style='margin-top:0;'></a></div>
 			<div class="column" id='bTitle'>
 				<hr>
 				<h1 id='bookTitle'>VAGABOND VOICES: THINK IN TRANSLATION</h1>
