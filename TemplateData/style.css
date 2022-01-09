@@ -16,15 +16,12 @@ body { padding: 0; margin: 0 }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 @font-face {
     font-family: 'omori_game2regular';
-    src: url('https://cdn.rawgit/cpmmckeown/cpmmckeown.github.io/blob/master/omori_game-webfont.woff2) format('woff2'),
+    src: url('https://cdn.rawgit.com/cpmmckeown/cpmmckeown.github.io/blob/master/omori_game-webfont.woff2') format('woff2'),
          url('https://cdn.rawgit.com/cpmmckeown/cpmmckeown.github.io/blob/master/omori_game-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-
-
-
 
 @font-face {
     font-family: 'omori_gameregular';
