@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'omori_game2regular';
-    src: url('omori_game-webfont.woff2') format('woff2'),
-         url('omori_game-webfont.woff') format('woff');
+    src: url('https://raw.githubusercontentgi.com/cpmmckeown/cpmmckeown.github.io/blob/91558ab4e8b50a014df17e85383f2e00c1277f86/omori_game-webfont.woff2') format('woff2'),
+         url('https://github.com/cpmmckeown/cpmmckeown.github.io/blob/91558ab4e8b50a014df17e85383f2e00c1277f86/omori_game2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
