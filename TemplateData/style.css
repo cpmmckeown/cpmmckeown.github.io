@@ -16,8 +16,8 @@ body { padding: 0; margin: 0 }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
 @font-face {
     font-family: 'omori_game2regular';
-    src: url('http://cdn.jsdelivr.net/gh/cpmmckeown/cpmmckeown.github.io/omori_game2-webfont.woff2?raw=true') format('woff2'),
-         url('https://github.com/cpmmckeown/cpmmckeown.github.io/omori_game2-webfont.woff?raw=true') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/cpmmckeown/cpmmckeown.github.io/omori_game2-webfont.woff2?raw=true') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/cpmmckeown/cpmmckeown.github.io/omori_game2-webfont.woff?raw=true') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -25,8 +25,8 @@ body { padding: 0; margin: 0 }
 
 @font-face {
     font-family: 'omori_gameregular';
-    src: url('https://github.com/cpmmckeown/cpmmckeown.github.io/omori_game-webfont.woff2?raw=true') format('woff2'),
-         url('https://github.com/cpmmckeown/cpmmckeown.github.io/omori_game-webfont.woff?raw=true') format('woff');
+    src: url('https://cdn.jsdelivr.net/gh/cpmmckeown/cpmmckeown.github.io/omori_game-webfont.woff2?raw=true') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/cpmmckeown/cpmmckeown.github.io/omori_game-webfont.woff?raw=true') format('woff');
     font-weight: normal;
     font-style: normal;
 
